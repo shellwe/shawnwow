@@ -19,114 +19,166 @@
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="#carousel">Shawn Hellwege - Web Designer</a> </div>
-    <div class="collapse navbar-collapse">
+      <a class="navbar-brand" href="#carousel">Shawn Hellwege</a></div>
+    <div class="collapse navbar-collapse" id="side-nav">
       <ul class="nav navbar-nav">
         <li><a href="#benefits">Why Me?</a></li>
         <li><a href="#sites">My Work</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a href="#resume">Resum&#233;</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <!--/.nav-collapse --> 
   </div>
 </div>
+<section id="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active"> <!-- <img src="images/carousel1.png" alt="..."> -->
+        <div class="carousel-caption">
+          <h1>Quality custom web design</h1>
+          <p>I offer a free consultation to discuss what you would like with your website.  You don't owe anything until we have come up with a design and objectives that you are completely happy with.</p> 
+        </div>
+      </div>
+      <div class="item "> <!-- <img src="images/carousel2.png" alt="..."> -->
+        <div class="carousel-caption">
+          <h1>Mobile first technology</h1>
+          <p>I utilize mobile first technology such as bootstrap to create content that looks great in a broad range of devices</p>
+        </div>
+      </div>
+      <div class="item "> <!-- <img src="images/carousel3.png" alt="..."> -->
+        <div class="carousel-caption">
+          <h1>Satisfied customers</h1>
+          <p>Please scroll below to see some other customers that I have worked with (references available upon request)</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Controls --> 
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
+</section>
 <div class="container">
-
-  <section id="carousel">
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="images/carousel1.png" alt="...">
-      <div class="carousel-caption">
-        some caption
-      </div>
-    </div>
-    <div class="item ">
-      <img src="images/carousel2.png" alt="...">
-      <div class="carousel-caption">
-        some caption
-      </div>
-    </div>
-<div class="item ">
-      <img src="images/carousel3.png" alt="...">
-      <div class="carousel-caption">
-        some caption
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-  </section>
-    <hr class="featurette-divider">
-  <div class="row">
-  <section id="sites">
-    <section id="benefits">
-      <div class="col-lg-4"> <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="benefit1.png">
-        <h2>Heading</h2>
-        <p>Custom design at an affordable rate.  I work hard to add a personal touch that canned site creators can't provide.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+  <section id="benefits">
+    <div class="row">
+      <div class="col-lg-4">
+        <div style="text-align:center"><img src="images/heart.png"></div>
+        <h2>Affordable and Personal</h2>
+        <p>Custom design at an affordable rate.  I work hard to add a personal touch and customization that canned site creators can't provide.</p>
       </div>
       <!-- /.col-lg-4 -->
-      <div class="col-lg-4"> <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="benefit2.png">
+      <div class="col-lg-4">
+        <div style="text-align:center"><img src="images/directions.png"></div>
         <h2>Broad Experience</h2>
-        <p>I have experience in both front end web design, SQL development, as well as back end PHP development to create web applications. If you have large needs I do have colleagues with experience in design, user experience (UX), as well as back end web development..</p>
-        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        <p>I have experience web design, SQL, as well as back end PHP web applications.  If your vision is greater than my scope I have experienced colleagues that I would be happy to work with.</p>
       </div>
       <!-- /.col-lg-4 -->
-      <div class="col-lg-4"> <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="benefit3.png">
+      <div class="col-lg-4">
+        <div style="text-align:center"><img src="images/code.png"></div>
         <h2>The code is yours!</h2>
-        <p>I do not charge maintenance fees if I am not.  I allow the client to chose their web host or can help you find one that suits your needs.  I only charge for changes that you request.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        <p>I do not charge monthly &quot;maintenance fees&quot;.  I allow the client to chose their web host or can help you find one that suits your needs.  I only charge for changes that you request.</p>
       </div>
       <!-- /.col-lg-4 --> 
-    </section>
+    </div>
+  </section>
+  <section id="sites">
     <hr class="featurette-divider">
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-        <p class="lead">sdfsdf</p>
+        <h2 class="featurette-heading">Great Plains Landscaping <span class="text-muted">Stylish and Polished</span></h2>
+        <p class="lead">I was appreciative to the Marcus (owner) for allowing me to have a little more creative control with designing websites. I was able to take advantage of features such as carousels and CSS3/HTML5 tools such as rounded corners and enhancing forms in addition to social media. I look forward to working with Marcus as his new business grows and we can include more content/features.</p>
       </div>
-      <div class="col-md-5"> <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="images/greatplains.png"> </div>
+      <div class="col-md-5"> <a href="http://greatplainslandscapes.com/"><img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="images/greatplains.png"></a> </div>
     </div>
     <hr class="featurette-divider">
     <div class="row featurette">
-      <div class="col-md-5"> <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="images/llc.png"> </div>
+      <div class="col-md-5"> <a href="http://lincolnlandscapingcompany.com/"><img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="images/llc.png"></a> </div>
       <div class="col-md-7">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">Lincoln Landscaping Company<br />
+          <span class="text-muted">Attractive and Informative</span></h2>
+        <p class="lead">Rick Clark (owner) has been one of my biggest clients. We went from a very basic site with some categories and some contact information to a very versatile and mature website. Recently redesigned from the ground up with a consistant look and feel throughout the site. We were very pleased to see this site reach the top of the search results and I will continue to improve its SEO.</p>
       </div>
     </div>
     <hr class="featurette-divider">
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">Michael J Butkus &amp; Company <span class="text-muted">Simple and Elegant</span></h2>
+        <p class="lead">This was my first professional site and it is still running strong.  Mike Butkus came to me in need of some work on an old website he had.  I worked with him to polish it up and make the required updates.</p>
       </div>
-      <div class="col-md-5"> <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="images/butkus.png"> </div>
+      <div class="col-md-5"> <a href="http://butkus.com/"><img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="images/butkus.png"></a> </div>
     </div>
-    <hr class="featurette-divider">
-    </section>
-    <hr class="featurette-divider">
-    <section id="resume"> Section 4 </section>
-    <hr class="featurette-divider">
-    <section id="contact"> Section 5 </section>
-  </div>
+  </section>
+  <hr class="featurette-divider">
+  <p class="lead">Since my experience is not limited to freelance projects I have done I would also like to show some of the places I worked and the skills I have gained through some of those positions.  My full resume is available upon request</p>
+  <section id="resume">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="images/ljs.jpg" class="img-responsive" alt="Lincoln Journal Star">
+      </div>
+      <div class="col-md-8 col-md-offset-1">
+        <ul>
+          <li>Worked on special projects</li>
+          <li>Set up and maintained Drupal site for a job recruiting site.</li>
+          <li>Sampled with using Wordpresses and other CMS applications</li>
+          <li>Set up Google analytics to guage what was and was not working</li>
+        </ul>
+      </div>
+      <div class="clearfix"><hr class="featurette-divider"></div>
+      <div class="col-md-3">
+        <img src="images/unl.gif" class="img-responsive" alt="University of Nebraska - Lincoln">
+      </div>
+      <div class="col-md-8 col-md-offset-1">
+        <ul>
+          <li>Maintained the <a href="http://ntc.unl.edu">NTC</a>, <a href="http://matc.unl.edu">MATC</a>, <a href="http://fastforward.unl.edu">Fast Forward</a>, <a href="http://mwrsf.unl.edu">MWRSF main site</a> and <a href="http://mwrsf-qa.unl.edu/">MWRSF QA site</a></li>
+          <li>Integrated social media</li>
+          <li>Set up Google analytics to guage what was and was not working</li>
+          <li>Set up a news letter e-mail</li>
+          <li>Developed web applications with PHP and MySQL</li>
+          <li>trained employees how maintain the site</li>
+          <li>Applied training sessions on HTML5 and CSS and Web Development</li>
+          <li>Was trained with many components of the Adobe Suite including (but not limited to) Photoshop, Illustator, Flash, and Dreamweaver</li>
+          <li>Worked with applying UNL sites to the Drupal template</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <hr class="featurette-divider">
+  <div class="row">
+  <section id="contact">
+    <div class="well well-lg">
+        <div class="row">
+            <p class="lead">If you would like a free consultation please call me at 402-570-7904 otherwise please fill out your contact info below and I will get back with you shortly!</p>
+        </div>
+      <form role="form" name="form1" method="post" action="formhandler.php">
+          <div class="row">
+              <div class="col-md-4">
+                  <label for="name">What is your Name?</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name Here">
+              </div>
+              <div class="col-md-4">
+              <label for="email">An e-mail I can contact you with...</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="e.g. user@gmail.com">
+              </div>
+              <div class="col-md-4">
+              <label for="phone">And if I need to call?</label>
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="e.g. 402-123-4567">
+              </div>
+          </div>
+          <label for="message">What would you like me to know ahead of time?</label>
+          <br>
+          <textarea name="message" id="message" class="form-control" cols="100" rows="5"></textarea>
+          <input class="btn btn-large btn-primary" type="submit" name="submit" id="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+</div>
 </div>
 </div>
 
