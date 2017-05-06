@@ -39,6 +39,11 @@ function helperChinese() {
     CharacterLoopIteration = 1;
     currentChineseCharacterChoices.forEach(function (currentCharacter) {
         $("#output-container").append('<div class="chinese-choice" id="choice-' + currentCharacter + '"> <div class="character-text">' + currentCharacter + '</div> <div class="character-speech"><input type="button" value="Play Sound" onclick="responsiveVoice.speak(\'' + currentCharacter + '\', \'Chinese Female\')"></div> <div class="character-images"></div> </div>');
+
+        $('.character-text').click(function () {
+            alert($(this).text());
+        });
+        
         $(".character-images").empty();
         //image retrieval
         encodedCurrentChineseCharacter = encodeURIComponent(currentCharacter);
@@ -60,8 +65,5 @@ function myResponsiveVoice(character) {
 }
 
 //to reset the value
-$('.character-text').click(function() {
-  alert( $(this).text() );
-});
 //$('.chinese-checkbox').prop('checked', false);
 //$('.chinese-checkbox').prop('checked', true);
