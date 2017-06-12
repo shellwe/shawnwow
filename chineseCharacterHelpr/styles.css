@@ -389,6 +389,12 @@ template {
 [hidden] {
   display: none; }
 
+body {
+  background-color: #fefeff; }
+
+.hidden-asset {
+  display: none; }
+
 * {
   box-sizing: border-box; }
 
@@ -409,14 +415,14 @@ template {
     text-align: center;
     width: 50%;
     border-radius: 50px;
-    border: medium solid red;
-    color: red;
+    border: medium solid #006600;
+    color: #006600;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 1%;
     margin: 1% auto; }
   #input-container :disabled {
-    border: medium solid #CCC; }
+    border: medium solid #f5f5f5; }
 
 @media screen and (max-width: 767px) {
   #input-container input {
@@ -427,7 +433,8 @@ template {
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: nowrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: white; }
   #output-container .character-result {
     display: flex;
     flex-direction: column;
@@ -436,13 +443,29 @@ template {
     text-align: center;
     border: thin black inset;
     flex-grow: 1; }
+    #output-container .character-result .translation-speech {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: nowrap; }
+      #output-container .character-result .translation-speech svg {
+        width: 45px;
+        height: 45px;
+        margin: 2%; }
+    #output-container .character-result .translated-text {
+      color: #666;
+      font-size: 1rem; }
+      #output-container .character-result .translated-text span {
+        font-weight: bold;
+        color: #006600; }
     #output-container .character-result .character-text {
       text-align: center;
       font-size: 3vw; }
-    #output-container .character-result:hover {
-      background: yellow;
-      color: red;
-      flex-grow: 2; }
+      #output-container .character-result .character-text:hover {
+        color: #006600; }
+      #output-container .character-result .character-text:hover {
+        background: #ffffaa;
+        flex-grow: 2; }
 
 @media screen and (max-width: 767px) {
   #output-wrapper {
@@ -451,8 +474,8 @@ template {
 
   #output-container {
     width: 1000px; }
-    #output-container .character-result .character-text {
-      font-size: 5vw; } }
+    #output-container .character-text {
+      font-size: 7vw; } }
 .image-output {
   display: flex;
   flex-direction: column;
@@ -466,7 +489,5 @@ template {
       height: auto;
       padding: 1%;
       border: 1%; }
-  .image-output .hidden-asset {
-    display: none; }
 
 /*# sourceMappingURL=styles.css.map */
