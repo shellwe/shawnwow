@@ -8,5 +8,8 @@
   "devDependencies": {
     "webpack": "latest",
     "aos": "latest"
+  },
+  "dependencies": {
+    "aos": "^2.1.1"
   }
 }
