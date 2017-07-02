@@ -1,0 +1,12 @@
+{
+  "name": "Shawnwow.com",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shellwe/shawnwow.git"
+  },
+  "devDependencies": {
+    "webpack": "latest",
+    "aos": "latest"
+  }
+}
