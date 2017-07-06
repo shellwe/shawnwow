@@ -2,12 +2,12 @@ body{
     background-color: #666;
 }
 .container{
-    background-color: lightyellow;
+    background-color: white;
 }
 
 footer{
     margin-top: 1rem;
-    border-top: thin lightblue inset;
+    border-top: thin #EEE inset;
 }
 
 .card-margin{
