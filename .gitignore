@@ -43,4 +43,4 @@ dwsync.xml
 .sass-cache
 
 # Mac Files
-.DS_Store
+**/.DS_Store

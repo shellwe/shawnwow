@@ -1,0 +1,20 @@
+#center-page{
+    display: flex;
+    align-items: center;
+    &>div{
+        flex: 0 1 auto;
+        width: 50%;
+    }
+    #left-side{
+        text-align: right;
+        .left-brain{
+            display: inline;
+        }
+    }
+    #right-side{
+        text-align: left;
+        .right-brain{
+            display: inline-block;
+        }
+    }
+}

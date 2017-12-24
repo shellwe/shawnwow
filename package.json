@@ -1,10 +1,12 @@
 {
-  "name": "Shawnwow Project",
-  "version": "1.0",
+  "name": "Shawnwow",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/shellwe/shawnwow.git"
   },
+  "license": "MIT",
+  "description": "My personal Homepage.",
   "devDependencies": {
     "autoprefixer": "latest",
     "grunt": "latest",
