@@ -398,19 +398,26 @@ template {
   #center-page > div {
     flex: 0 1 auto;
     width: 50%; }
-  #center-page #left-side {
-    text-align: right; }
+  #center-page #left-side:hover {
+    background-color: rgba(255, 0, 0, 0.5); }
+  #center-page #left-side #left-brain svg {
+    margin-left: auto;
+    margin-right: 1%; }
     #center-page #left-side #left-brain svg * {
       fill: red; }
-  #center-page #right-side {
-    text-align: left; }
+  #center-page #right-side:hover {
+    background-color: rgba(0, 0, 255, 0.5); }
+  #center-page #right-side #right-brain svg {
+    margin-left: 1%;
+    margin-right: auto; }
     #center-page #right-side #right-brain svg * {
       fill: blue; }
   #center-page .brain-image {
-    height: 100vh; }
+    height: 100vh;
+    display: flex;
+    align-items: center; }
     #center-page .brain-image svg {
-      height: 50%;
-      margin: 1%; }
+      height: 50%; }
       #center-page .brain-image svg * {
         width: 100%;
         height: 100%; }
@@ -422,7 +429,7 @@ template {
   display: none; }
 
 body {
-  color: black; }
+  background-color: black; }
 
 p, h1, h2, h3, h4 {
   color: white; }
