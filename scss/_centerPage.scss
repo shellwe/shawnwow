@@ -1,4 +1,6 @@
 #center-page{
+    height:100vh;
+    width:100vw;
     display: flex;
     align-items: center;
     &>div{
@@ -7,14 +9,31 @@
     }
     #left-side{
         text-align: right;
-        .left-brain{
-            display: inline;
-        }
+        #left-brain{
+            svg * {
+                fill: red;
+              }
+            }
     }
     #right-side{
         text-align: left;
-        .right-brain{
-            display: inline-block;
+        #right-brain{
+            svg * {
+                fill: blue;
+              }    
         }
+    }
+    .brain-image{
+        height:100vh;
+        // display: flex;
+        // align-items: center;
+        svg{
+            height:50%;
+            margin:1%;
+            * {
+                width:  100%;
+                height: 100%;
+              }
+            }
     }
 }
