@@ -435,7 +435,8 @@ template {
         height: 100%; }
 
 #left-page {
-  width: 100vw; }
+  max-width: 0;
+  opacity: 0; }
 
 #right-page {
   display: none; }
