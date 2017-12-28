@@ -420,6 +420,9 @@ template {
       margin-right: auto; }
       #center-page #right-side #right-brain svg * {
         fill: blue; }
+  #center-page .either-side:hover .brain-image svg {
+    height: 85%;
+    transition: height 1s; }
   #center-page .brain-image {
     height: 100vh;
     display: flex;
@@ -430,20 +433,29 @@ template {
       #center-page .brain-image svg * {
         width: 100%;
         height: 100%; }
-      #center-page .brain-image svg:hover {
-        height: 85%;
-        transition: height 1s; }
 
 #left-page {
-  display: none; }
+  width: 100vw; }
 
 #right-page {
   display: none; }
 
-body {
-  background-color: #999; }
+* {
+  box-sizing: border-box; }
 
-p, h1, h2, h3, h4 {
-  color: white; }
+body {
+  background-color: white; }
+
+.container {
+  width: 100vw;
+  overflow-x: none; }
+
+.main-panel {
+  max-width: 100vw;
+  opacity: 1; }
+
+.hidden-panel {
+  max-width: 0;
+  opacity: 0; }
 
 /*# sourceMappingURL=styles.css.map */
