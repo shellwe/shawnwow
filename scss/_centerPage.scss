@@ -55,6 +55,18 @@
             }
         }
     }
+    .either-side{
+        &:hover{
+            .brain-image{
+                svg{
+                    height:85%;
+                    transition: height 1s;
+                }
+                
+            }
+        
+        }
+    }    
     .brain-image{
         height:100vh;
         display: flex;

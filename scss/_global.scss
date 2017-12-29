@@ -1,7 +1,21 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    background-color: #999;
+    background-color: white;
 }
 
-p,h1,h2,h3,h4{
-    color: white;
+.container{
+    width: 300vw;
+    overflow-x:none;
+    display: flex;
+    flex-direction: row;
+
+    .main-panel{
+        width: 100vw;
+    }
+    .hidden-panel {
+        max-width: 0;
+        opacity: 0;
+    }    
 }
