@@ -1,44 +1,57 @@
+@import 'variables';
+
 #center-page{
-    height:100vh;
-    width:100vw;
+    // height:100vh;
+    // width:100vw;
     display: flex;
     align-items: center;
-    &>div{
-        flex: 0 1 auto;
-        width: 50%;
-    }
-    #left-side{
+    justify-content: center;
+    // &>div{
+    //     // flex: 0 1 auto;
+        
+    // }
+    div#left-side{
         background-color: rgba(255, 0, 0, 0);
-        transition: background-color 1s;
+        transition: 1s all ease;
         &:hover{
-            background-color: rgba(255, 0, 0, 0.5);
-            transition: background-color 1s;
+            background-color: transparentize($secondary, .5);
+            transition: 1s all ease;
         }
         #left-brain{
             svg {
-                margin-left:auto;
-                margin-right:1%;
+                transition: 1s all ease;
+                margin-left: auto;
+                margin-right: 1%;
                 * {
-                    fill: red;
+                    fill: $secondary;
+                    transition: .3s all ease;
                 }
+                
             }
+                    &:hover * {
+                        fill: rgba(255,255,255,.5);
+                    }
         }
     }
-    #right-side{
+    div#right-side{
         background-color: rgba(0, 0, 255, 0);
-        transition: background-color 1s;
+        transition: 1s all ease;
         &:hover{
-            background-color: rgba(0, 0, 255, 0.5);
-            transition: background-color 1s;
+            background-color: transparentize($primary, .5);
+            transition: 1s all ease;
 
         }    
         #right-brain{
             svg {
+                transition: 1s all ease;
                 margin-left:1%;
-                margin-right:auto;
+                margin-right: auto;
             * {
-                fill: blue;
+                fill: $primary;
               }  
+            }
+            &:hover * {
+                fill: rgba(255,255,255,.5);
             }
         }
     }
@@ -47,17 +60,57 @@
         display: flex;
         align-items: center;
         svg{
-            height:50%;
-            transition: height 1s;
+            height:50%;  
+            transition: all 1s;
             * {
                 width:  100%;
                 height: 100%;
               }
               &:hover{
                 height:55%;
-                transition: height 1s;
+                transition: all 1s;
                   }
-            }
+                }
         
+    }
+    .expanded {
+        min-width: 100vw;
+        opacity: 1;
+        // transition: 1s all ease;
+        svg{
+            height:90%;  
+            transition: height 1s;
+            * {
+                // width:  100%;
+                // height: 100%;
+                fill: darken($primary, $amount: 50)
+            }
+            &:hover{
+                height:90%;
+                transition: height 1s;
+            }
+            
+        }
+        
+        
+        
+    }
+    .hidden {
+        // transition: 1s all ease;
+        opacity: 0;
+        svg{
+            
+            height: 30%;
+        }
+        
+        
+    }
+    .shrink {
+        min-width: 0;
+        overflow: hidden;
+        // transition: 1s all ease;
+    }
+    .normalize {
+        min-width: 50vw;
     }
 }

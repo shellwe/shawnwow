@@ -391,71 +391,46 @@ template {
   display: none; }
 
 #center-page {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: center; }
-  #center-page div#left-side {
+  align-items: center; }
+  #center-page > div {
+    flex: 0 1 auto;
+    width: 50%; }
+  #center-page #left-side {
     background-color: rgba(255, 0, 0, 0);
-    transition: 1s all ease; }
-    #center-page div#left-side:hover {
+    transition: background-color 1s; }
+    #center-page #left-side:hover {
       background-color: rgba(255, 0, 0, 0.5);
-      transition: 1s all ease; }
-    #center-page div#left-side #left-brain svg {
-      transition: 1s all ease;
+      transition: background-color 1s; }
+    #center-page #left-side #left-brain svg {
       margin-left: auto;
       margin-right: 1%; }
-      #center-page div#left-side #left-brain svg * {
-        fill: red;
-        transition: .3s all ease; }
-    #center-page div#left-side #left-brain:hover * {
-      fill: rgba(255, 255, 255, 0.5); }
-  #center-page div#right-side {
+  #center-page #right-side {
     background-color: rgba(0, 0, 255, 0);
-    transition: 1s all ease; }
-    #center-page div#right-side:hover {
+    transition: background-color 1s; }
+    #center-page #right-side:hover {
       background-color: rgba(0, 0, 255, 0.5);
-      transition: 1s all ease; }
-    #center-page div#right-side #right-brain svg {
-      transition: 1s all ease;
+      transition: background-color 1s; }
+    #center-page #right-side #right-brain svg {
       margin-left: 1%;
       margin-right: auto; }
-      #center-page div#right-side #right-brain svg * {
+      #center-page #right-side #right-brain svg * {
         fill: blue; }
-    #center-page div#right-side #right-brain:hover * {
-      fill: rgba(255, 255, 255, 0.5); }
   #center-page .brain-image {
     height: 100vh;
     display: flex;
     align-items: center; }
     #center-page .brain-image svg {
       height: 50%;
-      transition: all 1s; }
+      transition: height 1s; }
       #center-page .brain-image svg * {
         width: 100%;
         height: 100%; }
       #center-page .brain-image svg:hover {
         height: 55%;
-        transition: all 1s; }
-  #center-page .expanded {
-    min-width: 100vw;
-    opacity: 1; }
-    #center-page .expanded svg {
-      height: 90%;
-      transition: height 1s; }
-      #center-page .expanded svg * {
-        fill: black; }
-      #center-page .expanded svg:hover {
-        height: 90%;
         transition: height 1s; }
-  #center-page .hidden {
-    opacity: 0; }
-    #center-page .hidden svg {
-      height: 30%; }
-  #center-page .shrink {
-    min-width: 0;
-    overflow: hidden; }
-  #center-page .normalize {
-    min-width: 50vw; }
 
 #left-page {
   display: none; }
