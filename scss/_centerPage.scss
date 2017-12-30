@@ -1,57 +1,44 @@
-@import 'variables';
-
 #center-page{
-    // height:100vh;
-    // width:100vw;
+    height:100vh;
+    width:100vw;
     display: flex;
     align-items: center;
-    justify-content: center;
-    // &>div{
-    //     // flex: 0 1 auto;
-        
-    // }
-    div#left-side{
-        background-color: rgba(255, 0, 0, 0);
-        transition: 1s all ease;
+    &>div{
+        flex: 0 1 auto;
+        width: 50%;
+    }
+    #left-side{
+        background-color: rgba(255, 0, 0, 0.25);
+        transition: background-color 1s;
         &:hover{
-            background-color: transparentize($secondary, .5);
-            transition: 1s all ease;
+            background-color: rgba(255, 0, 0, 0.5);
+            transition: background-color 1s;
         }
         #left-brain{
             svg {
-                transition: 1s all ease;
-                margin-left: auto;
-                margin-right: 1%;
+                margin-left:auto;
+                margin-right:1%;
                 * {
-                    fill: $secondary;
-                    transition: .3s all ease;
+                    fill: red;
                 }
-                
             }
-                    &:hover * {
-                        fill: rgba(255,255,255,.5);
-                    }
         }
     }
-    div#right-side{
-        background-color: rgba(0, 0, 255, 0);
-        transition: 1s all ease;
+    #right-side{
+        background-color: rgba(0, 0, 255, 0.25);
+        transition: background-color 1s;
         &:hover{
-            background-color: transparentize($primary, .5);
-            transition: 1s all ease;
+            background-color: rgba(0, 0, 255, 0.5);
+            transition: background-color 1s;
 
         }    
         #right-brain{
             svg {
-                transition: 1s all ease;
                 margin-left:1%;
-                margin-right: auto;
+                margin-right:auto;
             * {
-                fill: $primary;
+                fill: blue;
               }  
-            }
-            &:hover * {
-                fill: rgba(255,255,255,.5);
             }
         }
     }
@@ -72,57 +59,13 @@
         display: flex;
         align-items: center;
         svg{
-            height:50%;  
-            transition: all 1s;
+            height:75%;
+            transition: height 1s;
             * {
                 width:  100%;
                 height: 100%;
               }
-              &:hover{
-                height:55%;
-                transition: all 1s;
-                  }
-                }
-        
-    }
-    .expanded {
-        min-width: 100vw;
-        opacity: 1;
-        // transition: 1s all ease;
-        svg{
-            height:90%;  
-            transition: height 1s;
-            * {
-                // width:  100%;
-                // height: 100%;
-                fill: darken($primary, $amount: 50)
             }
-            &:hover{
-                height:90%;
-                transition: height 1s;
-            }
-            
-        }
-        
-        
-        
-    }
-    .hidden {
-        // transition: 1s all ease;
-        opacity: 0;
-        svg{
-            
-            height: 30%;
-        }
-        
-        
-    }
-    .shrink {
-        min-width: 0;
-        overflow: hidden;
-        // transition: 1s all ease;
-    }
-    .normalize {
-        min-width: 50vw;
+
     }
 }
