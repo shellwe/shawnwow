@@ -391,6 +391,7 @@ template {
   display: none; }
 
 #center-page {
+  left: 100vw;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -400,10 +401,10 @@ template {
     width: 50%; }
   #center-page #left-side {
     background-color: rgba(255, 0, 0, 0.25);
-    transition: background-color 1s; }
+    transition: background-color 1s ease; }
     #center-page #left-side:hover {
       background-color: rgba(255, 0, 0, 0.5);
-      transition: background-color 1s; }
+      transition: background-color 1s ease; }
     #center-page #left-side #left-brain svg {
       margin-left: auto;
       margin-right: 1%; }
@@ -411,10 +412,10 @@ template {
         fill: red; }
   #center-page #right-side {
     background-color: rgba(0, 0, 255, 0.25);
-    transition: background-color 1s; }
+    transition: background-color 1s ease; }
     #center-page #right-side:hover {
       background-color: rgba(0, 0, 255, 0.5);
-      transition: background-color 1s; }
+      transition: background-color 1s ease; }
     #center-page #right-side #right-brain svg {
       margin-left: 1%;
       margin-right: auto; }
@@ -422,39 +423,52 @@ template {
         fill: blue; }
   #center-page .either-side:hover .brain-image svg {
     height: 85%;
-    transition: height 1s; }
+    transition: height 1s ease; }
   #center-page .brain-image {
     height: 100vh;
     display: flex;
     align-items: center; }
     #center-page .brain-image svg {
       height: 75%;
-      transition: height 1s; }
+      transition: height 1s ease; }
       #center-page .brain-image svg * {
         width: 100%;
         height: 100%; }
 
 #left-page {
+  left: 0;
   background-color: rgba(255, 0, 0, 0.25); }
 
 #right-page {
+  left: 200vw;
   background-color: rgba(0, 0, 255, 0.25); }
 
 * {
   box-sizing: border-box; }
 
 body {
-  background-color: white; }
+  background-color: white;
+  overflow-x: hidden; }
 
-.container {
-  width: 300vw;
-  overflow-x: none;
-  display: flex;
-  flex-direction: row; }
-  .container .main-panel {
-    width: 100vw; }
-  .container .hidden-panel {
+#container {
+  transition: left 1s ease;
+  width: 100vw;
+  height: 100vh;
+  position: absolute; }
+  #container .main-panel {
+    width: 100vw;
+    position: absolute; }
+  #container .hidden-panel {
     max-width: 0;
     opacity: 0; }
+
+.active-left {
+  left: 0; }
+
+.active-center {
+  left: -100vw; }
+
+.active-right {
+  left: -200vw; }
 
 /*# sourceMappingURL=styles.css.map */
