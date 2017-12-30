@@ -11,6 +11,7 @@
 
 <body>
 	<div class="container">
+<<<<<<< HEAD
 		<div id="center-page">
 			<div id="left-side" class="normalize" onclick="expandBrainLeft()">
         <h1>This is the content of the left brain panel!!!!!</h1>
@@ -20,6 +21,14 @@
           <input type="submit" value="Send">
         </form>
       </div>
+=======
+		<div id="left-page" class="hidden-panel">
+			<form action="https://formspree.io/shellwe@gmail.com" method="POST">
+				<input type="text" name="name">
+				<input type="email" name="_replyto">
+				<input type="submit" value="Send">
+			</form>
+>>>>>>> parent of 878336f... added in the panel, need to figure out the logic to only show the active panel
 		</div>
 		<div id="center-page" class="main-panel">
 			<div id="left-side" class="either-side">
@@ -226,9 +235,8 @@
 				</div>
 			</div>
 		</div>
-		<div id="right-page" class="main-panel">
-				<h1>This is the content of the right brain panel!!!!!</h1>
-				<form action="https://formspree.io/shellwe@gmail.com" method="POST">
+		<div id="right-page" class="hidden-panel">
+			<form action="https://formspree.io/shellwe@gmail.com" method="POST">
 				<input type="text" name="name">
 				<input type="email" name="_replyto">
 				<input type="submit" value="Send">
