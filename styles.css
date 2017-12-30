@@ -400,22 +400,34 @@ template {
     flex: 0 1 auto;
     width: 50%; }
   #center-page #left-side {
-    background-color: rgba(255, 0, 0, 0.25);
-    transition: background-color 1s ease; }
-    #center-page #left-side:hover {
-      background-color: rgba(255, 0, 0, 0.5);
-      transition: background-color 1s ease; }
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc8c8+0,ffc8ff+100 */
+    background: #ffc8c8;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #ffc8c8 0%, #ffc8ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffc8c8 0%, #ffc8ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffc8c8 0%, #ffc8ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left-color', endColorstr='$center-color', GradientType=1);
+    /* IE6-9 */ }
     #center-page #left-side #left-brain svg {
       margin-left: auto;
       margin-right: 1%; }
       #center-page #left-side #left-brain svg * {
         fill: red; }
   #center-page #right-side {
-    background-color: rgba(0, 0, 255, 0.25);
-    transition: background-color 1s ease; }
-    #center-page #right-side:hover {
-      background-color: rgba(0, 0, 255, 0.5);
-      transition: background-color 1s ease; }
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc8ff+0,c8c8ff+100 */
+    background: #ffc8ff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #ffc8ff 0%, #c8c8ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffc8ff 0%, #c8c8ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffc8ff 0%, #c8c8ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$center-color', endColorstr='$right-color', GradientType=1);
+    /* IE6-9 */ }
     #center-page #right-side #right-brain svg {
       margin-left: 1%;
       margin-right: auto; }
@@ -437,17 +449,16 @@ template {
 
 #left-page {
   left: 0;
-  background-color: rgba(255, 0, 0, 0.25); }
+  background-color: #ffc8c8; }
 
 #right-page {
   left: 200vw;
-  background-color: rgba(0, 0, 255, 0.25); }
+  background-color: #c8c8ff; }
 
 * {
   box-sizing: border-box; }
 
 body {
-  background-color: white;
   overflow-x: hidden; }
 
 #container {
