@@ -6,7 +6,7 @@ body{
 
 }
 #container{
-    transition:left 1s ease;
+    transition:left .5s ease-out;
     width: 100vw;
     height: 100vh;
     position: absolute;

@@ -11,19 +11,28 @@
     #left-side {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc8c8+0,ffc8ff+100 */
         background: $left-color;
-        /* Old browsers */
-        background: -moz-linear-gradient(left, $left-color 0%, $center-color 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, $left-color 0%, $center-color 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, $left-color 0%, $center-color 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left-color', endColorstr='$center-color', GradientType=1);
-        /* IE6-9 */
-
+        // /* Old browsers */
+        // background: -moz-linear-gradient(left, $left-color 0%, $center-color 100%);
+        // /* FF3.6-15 */
+        // background: -webkit-linear-gradient(left, $left-color 0%, $center-color 100%);
+        // /* Chrome10-25,Safari5.1-6 */
+        // background: linear-gradient(to right, $left-color 0%, $center-color 100%);
+        // /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left-color', endColorstr='$center-color', GradientType=1);
+        // /* IE6-9 */
+        // transition: background 5s ease;
         // &:hover {
-        //     background: rgb(255,200,255); /* Old browsers */
-        //     transition: background 1s ease;
+        //     background: $left-color;
+        //     /* Old browsers */
+        //     background: -moz-linear-gradient(left, $left-color 0%, $left-color 100%);
+        //     /* FF3.6-15 */
+        //     background: -webkit-linear-gradient(left, $left-color 0%, $left-color 100%);
+        //     /* Chrome10-25,Safari5.1-6 */
+        //     background: linear-gradient(to right, $left-color 0%, $left-color 100%);
+        //     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        //     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left-color', endColorstr='$left-color', GradientType=1);
+        //     /* IE6-9 */
+        //     transition: background 5s ease;
         // }
         #left-brain {
             svg {
@@ -36,17 +45,31 @@
         }
     }
     #right-side {
-            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc8ff+0,c8c8ff+100 */
-            background: $center-color;
-            /* Old browsers */
-            background: -moz-linear-gradient(left, $center-color 0%, $right-color 100%);
-            /* FF3.6-15 */
-            background: -webkit-linear-gradient(left, $center-color 0%, $right-color 100%);
-            /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to right, $center-color 0%, $right-color 100%);
-            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$center-color', endColorstr='$right-color', GradientType=1);
-            /* IE6-9 */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc8ff+0,c8c8ff+100 */
+        background: $right-color;
+        // /* Old browsers */
+        // background: -moz-linear-gradient(left, $center-color 0%, $right-color 100%);
+        // /* FF3.6-15 */
+        // background: -webkit-linear-gradient(left, $center-color 0%, $right-color 100%);
+        // /* Chrome10-25,Safari5.1-6 */
+        // background: linear-gradient(to right, $center-color 0%, $right-color 100%);
+        // /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$center-color', endColorstr='$right-color', GradientType=1);
+        // /* IE6-9 */
+        // transition: background 5s ease;
+        // &:hover {
+        //     background: $right-color;
+        //     /* Old browsers */
+        //     background: -moz-linear-gradient(left, $right-color 0%, $right-color 100%);
+        //     /* FF3.6-15 */
+        //     background: -webkit-linear-gradient(left, $right-color 0%, $right-color 100%);
+        //     /* Chrome10-25,Safari5.1-6 */
+        //     background: linear-gradient(to right, $right-color 0%, $right-color 100%);
+        //     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        //     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$right-color', endColorstr='$right-color', GradientType=1);
+        //     /* IE6-9 */
+        //     transition: background 5s ease;
+        // }
         #right-brain {
             svg {
                 margin-left: 1%;
@@ -61,7 +84,7 @@
         &:hover {
             .brain-image {
                 svg {
-                    height: 85%;
+                    height: 80%;
                     transition: height 1s ease;
                 }
             }
@@ -73,7 +96,7 @@
         align-items: center;
         svg {
             height: 75%;
-            transition: height 1s ease;
+            transition: height .5s ease;
             * {
                 width: 100%;
                 height: 100%;

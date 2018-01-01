@@ -401,40 +401,22 @@ template {
     width: 50%; }
   #center-page #left-side {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc8c8+0,ffc8ff+100 */
-    background: #ffc8c8;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #ffc8c8 0%, #ffc8ff 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #ffc8c8 0%, #ffc8ff 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #ffc8c8 0%, #ffc8ff 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left-color', endColorstr='$center-color', GradientType=1);
-    /* IE6-9 */ }
+    background: black; }
     #center-page #left-side #left-brain svg {
       margin-left: auto;
       margin-right: 1%; }
       #center-page #left-side #left-brain svg * {
-        fill: red; }
+        fill: white; }
   #center-page #right-side {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc8ff+0,c8c8ff+100 */
-    background: #ffc8ff;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #ffc8ff 0%, #c8c8ff 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #ffc8ff 0%, #c8c8ff 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #ffc8ff 0%, #c8c8ff 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$center-color', endColorstr='$right-color', GradientType=1);
-    /* IE6-9 */ }
+    background: white; }
     #center-page #right-side #right-brain svg {
       margin-left: 1%;
       margin-right: auto; }
       #center-page #right-side #right-brain svg * {
-        fill: blue; }
+        fill: black; }
   #center-page .either-side:hover .brain-image svg {
-    height: 85%;
+    height: 80%;
     transition: height 1s ease; }
   #center-page .brain-image {
     height: 100vh;
@@ -442,14 +424,26 @@ template {
     align-items: center; }
     #center-page .brain-image svg {
       height: 75%;
-      transition: height 1s ease; }
+      transition: height .5s ease; }
       #center-page .brain-image svg * {
         width: 100%;
         height: 100%; }
 
 #left-page {
+  background: white;
   left: 0;
-  background-color: #ffc8c8; }
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  grid-template-areas: "freelance freelance freelance brain" "resume resume resume aside" "workHistory workHistory aside" "footer footer aside"; }
+  #left-page .inverse-background {
+    background: black; }
+  #left-page .freelance_ {
+    grid-area: freelance; }
+  #left-page .brain-nav {
+    grid-area: brain;
+    background: black; }
 
 #right-page {
   left: 200vw;
@@ -462,7 +456,7 @@ body {
   overflow-x: hidden; }
 
 #container {
-  transition: left 1s ease;
+  transition: left .5s ease-out;
   width: 100vw;
   height: 100vh;
   position: absolute; }
