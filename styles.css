@@ -433,17 +433,16 @@ template {
   background: white;
   left: 0;
   background-color: white;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1em;
-  grid-template-areas: "freelance freelance freelance brain" "resume resume resume aside" "workHistory workHistory aside" "footer footer aside"; }
-  #left-page .inverse-background {
+  display: flex;
+  flex-direction: row; }
+  #left-page .page-side {
+    width: 66%;
+    background: white; }
+  #left-page .page-content {
+    width: 33.3333%;
     background: black; }
-  #left-page .freelance_ {
-    grid-area: freelance; }
-  #left-page .brain-nav {
-    grid-area: brain;
-    background: black; }
+  #left-page svg {
+    height: 10px; }
 
 #right-page {
   left: 200vw;

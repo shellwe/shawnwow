@@ -2,28 +2,40 @@
     background: white;
     left: 0;
     background-color: $left-brain;
-    display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    // grid-template-rows: 1fr 1fr;
-    grid-gap: 1em;
-    grid-template-areas:
-    "freelance freelance freelance brain"
-    "resume resume resume aside"
-    "workHistory workHistory aside"
-    "footer footer aside";
-    // max-width: 1000px;
-    // height: 1000px;
-    // margin: auto;
-    .inverse-background{
-        background: black;
+    display: flex;
+    flex-direction: row;
+    // grid-template-columns:repeat(4, 1fr);
+    // // grid-template-rows: 1fr 1fr;
+    // grid-gap: 1em;
+    // grid-template-areas:
+    // "freelance freelance freelance brain"
+    // "resume resume resume aside"
+    // "workHistory workHistory aside"
+    // "footer footer aside";
+    // // max-width: 1000px;
+    // // height: 1000px;
+    // // margin: auto;
+    .page-side{
+        width: 66%;
+        background:$right-color;
     }
-    .freelance_{
-        grid-area: freelance;
+    .page-content{
+        width: 33.3333%;
+        background:$left-color;
     }
-    .brain-nav{
-        grid-area: brain;
-        background: $right-brain;
+    svg{
+        height:10px;
     }
+    // .inverse-background{
+    //     background: black;
+    // }
+    // .freelance_{
+    //     grid-area: freelance;
+    // }
+    // .brain-nav{
+    //     grid-area: brain;
+    //     background: $right-brain;
+    // }
     form{
 
     }
