@@ -27,4 +27,14 @@
     margin: auto;
 }
 
+aside{
+    grid-area: aside;
+}
 
+.logical-layout{
+    grid-area: logical;
+}
+
+.creative-layout{
+    grid-area: creative;
+}

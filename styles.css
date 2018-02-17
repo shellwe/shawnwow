@@ -419,6 +419,15 @@ template {
   max-width: 1000px;
   margin: auto; }
 
+aside {
+  grid-area: aside; }
+
+.logical-layout {
+  grid-area: logical; }
+
+.creative-layout {
+  grid-area: creative; }
+
 nav .left-brain {
   background-color: red; }
 nav .right-brain {
