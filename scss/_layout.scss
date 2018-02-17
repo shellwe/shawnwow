@@ -1,0 +1,30 @@
+#container{
+    display: grid;
+
+    nav{
+        grid-area: navigation;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "leftBrain rightBrain";
+        .left-brain{
+            grid-area: leftBrain;
+        }
+        .right-brain{
+            grid-area: rightBrain;
+        }
+    }
+}
+
+.brain-layout{
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.logical-layout{
+    grid-template-areas: "something navigation";
+    max-width: 1000px;
+    margin: auto;
+}
+
+

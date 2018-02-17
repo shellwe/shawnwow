@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x:hidden;
+
+}
+#container{
+    transition:left .5s ease-out;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    .main-panel{
+        width: 100vw;
+        position: absolute;
+    }
+    .hidden-panel {
+        max-width: 0;
+        opacity: 0;
+    }
+}
+.active-left{
+    left:0;
+}
+.active-center{
+    left:-100vw;
+}
+.active-right{
+    left:-200vw;
+}
