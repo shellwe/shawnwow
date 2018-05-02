@@ -1,2 +1,0 @@
-# shawnwow
-Shawnwow homepage
