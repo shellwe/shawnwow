@@ -1,0 +1,33 @@
+header{
+    .container{
+        margin-top:5rem;
+        max-width: 800px;
+        background-color: $header-background;
+        flex-flow: row nowrap;
+        .personal-info{
+            flex:1;
+            font-size: 1.5rem;
+            padding: 5% 10%;
+            color: #fff;
+            flex-direction: column;
+            i{
+                font-size: 1.5rem;
+            }
+            .social-media{
+                margin:5%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                i{
+                    color: #fff;
+                    font-size: 3rem;
+                    
+                }
+            }
+        }
+        .profile-image{
+            flex:1;
+            background: pink;
+        }
+    }
+}
