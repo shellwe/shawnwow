@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = (props: {headerText: string, subHeaderText: string}) => {
+const Header = (props) => {
     return (
         <>
         <h1>{props.headerText}</h1>

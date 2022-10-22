@@ -7,7 +7,7 @@ import React from 'react';
 //     priority: number
 // }
 
-const Qualification = (props: {children: string}) => {
+const Qualification = (props) => {
     return (
         <li>{props.children}</li>
         )

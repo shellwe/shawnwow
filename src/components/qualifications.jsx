@@ -1,26 +1,17 @@
 import React from 'react';
 import Qualification from "./Qualification"
 
-import qualifications  from './qualifications.json';
+import qualificationsArray  from './qualificationsList.json';
 
-// type QualificationArray  = {
-//     qualification: string,
-//     company: string,
-//     category: string,
-//     priority: number
-// }
 
-// { qualifications.map(qualification: Qualification) => {...
 
-console.log(qualifications);
-
-const AllCompanies : { CompanyName: string, StartYear: number, EndYear: Number, Order: Number }[] = [
-    { "CompanyName": "UNL", "StartYear": 2019, "EndYear": 0, "Order": 1 },
-    { "CompanyName": "Assurity", "StartYear": 2014, "EndYear": 2019, "Order": 2 },
-    ];
+// const AllCompanies = [
+//     { "CompanyName": "UNL", "StartYear": 2019, "EndYear": 0, "Order": 1 },
+//     { "CompanyName": "Assurity", "StartYear": 2014, "EndYear": 2019, "Order": 2 },
+//     ];
   
 
-const qualificationsSorted = qualifications.sort((a, b) => (a.priority > b.priority) ? 1 : -1)
+const qualificationsSorted = qualificationsArray.sort((a, b) => (a.priority > b.priority) ? 1 : -1)
 
 
 const AssurityQualifications = qualificationsSorted.filter(obj => {
