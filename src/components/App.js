@@ -2,10 +2,21 @@ import logo from './logo.svg';
 import './App.css';
 import Header from "./Header"
 import Qualifications from "./qualifications"
+import Tools from "./Tools"
 
 import Footer from "./Footer"
 
-function App() {
+export function App() {
+  return (
+    <div>
+      <Header headerText={'Hello World'} subHeaderText = {'This is the main page Header'} />
+      <Tools />
+      <h1>My App</h1>
+    </div>
+  )
+}
+
+export function Resume() {
   return (
     <div className="App">
       <Header headerText={'Hello World'} subHeaderText = {'Something'} />
@@ -28,5 +39,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
