@@ -2,17 +2,18 @@ import logo from './logo.svg';
 import './App.css';
 import Header from "./Header"
 import Qualifications from "./qualifications"
-import Tools from "./Tools"
+import Products from "./Products"
+import Projects from "./Projects"
 
 import Footer from "./Footer"
 
 export function App() {
   return (
-    <div>
-      <Header headerText={'Hello World'} subHeaderText = {'This is the main page Header'} />
-      <Tools />
-      <h1>My App</h1>
-    </div>
+    <>
+      {/* <Header headerText={'Hello World'} subHeaderText = {'This is the main page Header'} /> */}
+      <Products />
+      <Projects />
+    </>
   )
 }
 
@@ -20,7 +21,6 @@ export function Resume() {
   return (
     <div className="App">
       <Header headerText={'Hello World'} subHeaderText = {'Something'} />
-      <Qualifications />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

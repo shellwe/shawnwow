@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Tool = (props) => {
+const Product = (props) => {
     return (
         <figure>
             <img src={'./images/logos/' + props.logoFile + '.svg'} alt={props.logoText} />
@@ -10,4 +10,4 @@ const Tool = (props) => {
     )
 }
 
-export default Tool;
+export default Product;
