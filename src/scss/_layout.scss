@@ -1,16 +1,24 @@
 * {
     box-sizing: border-box;
 }
+
 #root {
     position: relative;
     height: 100vh;
-section {
+
+    section {
         min-height: 100vh;
-        min-width: 100vw;
+        // min-width: 100vw;
         position: relative;
-        padding: 25px 0;
+        padding: 25px 5vw;
+
+        .container {
+            max-width: 1280px;
+            margin:auto;
+        }
     }
 }
+
 @media only screen and (min-height: 600px) {
     #root {
         scroll-snap-type: y mandatory;

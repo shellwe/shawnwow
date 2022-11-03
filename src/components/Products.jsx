@@ -25,6 +25,7 @@ const Products = (props) => {
                 <div className='product-group'>
                     <h2>Design</h2>
                     <Product logoFile={'adobe-audition-icon'} logoText={'Adobe Audition'}></Product>
+                    <Product logoFile={'adobe-illustrator-icon'} logoText={'Adobe Illustrator'}></Product>
                     <Product logoFile={'adobe-photoshop-icon'} logoText={'Adobe Photoshop'}></Product>
                     <Product logoFile={'adobe-xd-icon'} logoText={'Adobe XD'}></Product>
                     <Product logoFile={'figma-icon'} logoText={'Figma'}></Product>
@@ -38,6 +39,7 @@ const Products = (props) => {
                     <Product logoFile={'github-icon'} logoText={'Github'}></Product>
                     <Product logoFile={'google-analytics-icon'} logoText={'Google Analytics'}></Product>
                     <Product logoFile={'mysql-icon'} logoText={'MySQL'}></Product>
+                    <Product logoFile={'postman-icon'} logoText={'Postman'}></Product>
                     <Product logoFile={'sql-server-icon'} logoText={'SQL Server'}></Product>
                 </div>
                 <span></span>
@@ -47,6 +49,7 @@ const Products = (props) => {
                 <div className='product-group'>
                     <Product logoFile={'adobe-animate-icon'} logoText={'Adobe Animate'}></Product>
                     <Product logoFile={'angular-icon'} logoText={'AngularJS'}></Product>
+                    <Product logoFile={'greensock-icon'} logoText={'Greensock (GSAP)'}></Product>
                     <Product logoFile={'typescript-programming-language-icon'} logoText={'TypeScript'}></Product>
                     <Product logoFile={'vue-js-icon'} logoText={'VueJS'}></Product>
                     <Product logoFile={'webpack-icon'} logoText={'Webpack'}></Product>
