@@ -4,7 +4,7 @@ import Product from "./Product";
 const Products = (props) => {
     return (
         <section id="products">
-            <div>
+            <div className='container'>
                 <h1>What I know</h1>
                 <div className='product-group'>
                     <h2>Development</h2>
@@ -43,7 +43,6 @@ const Products = (props) => {
                     <Product logoFile={'sql-server-icon'} logoText={'SQL Server'}></Product>
                 </div>
                 <span></span>
-            </div>
             <div>
                 <h1>What I am learning</h1>
                 <div className='product-group'>
@@ -55,6 +54,7 @@ const Products = (props) => {
                     <Product logoFile={'webpack-icon'} logoText={'Webpack'}></Product>
                 </div>
 
+            </div>
             </div>
         </section>
     )

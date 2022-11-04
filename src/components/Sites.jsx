@@ -41,7 +41,7 @@ const Sites = (props) => {
         description={'I really enjoyed working on this site because it presented me with a great deal of challenges to overcome. With the "Why Nebraska" main page I was able to really take advantage of CSS Grid by making more complicated layouts that layer on top of each other. I also was allowed to explore using animation but not letting it affect accessibility. \n\n With the Career, Social, and Academic pages I was challenged with making a two column layout where just the left side scrolls and the right side rotates out pictures and descriptions as the user scrolls to different sections. The layout also presented a challenge by switching from two columns down to one becauu we needed as any as 4 media queries depending on the complexity \n\n From this Site I learned the importance breaking down complex Sites to managable and testable segments. I learned to work with talented designers to combine their expertise in design and my expertise in web and UX principles to build a quality website'}
       >
         <p><strong>Client:</strong> University of Nebraska–Lincoln</p>
-        <p><strong>Site:</strong> <a href="https://admissions.unl.edu/why-nebraska/" target="_blank">https://admissions.unl.edu/why-nebraska/</a></p>
+        <p><strong>Site:</strong> <a href="https://admissions.unl.edu/why-nebraska/" target="_blank" rel="noreferrer">https://admissions.unl.edu/why-nebraska/</a></p>
         <strong>Technologies used:</strong><span className="products">
         <Product logoFile={'sass-icon'} logoText={'SASS'}></Product>
         <Product logoFile={'javascript-programming-language-icon'} logoText={'JavaScript'}></Product>

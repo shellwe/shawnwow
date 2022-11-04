@@ -1,22 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
 
-p, span {
-    Font-Family: 'Cabin', Sans-Serif;
-    Font-Size: 16px;
-}
-
 h1,h2,h3,h4,h5,h6{
     Font-Family: 'Roboto Condensed', Sans-Serif;
 }
 
-h1{
-    font-size: 3rem;
-}
-
-h2{
-    font-size: 2.5rem;
-}
-
-h3{
-    font-size: 2rem;
+p, span, li {
+    Font-Family: 'Cabin', Sans-Serif;
+    Font-Size: 16px;
 }

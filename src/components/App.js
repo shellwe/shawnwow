@@ -4,6 +4,7 @@ import Header from "./Header"
 import Qualifications from "./qualifications"
 import Products from "./Products"
 import Sites from "./Sites"
+import Presentations from "./Presentations"
 import AboutMe from "./AboutMe"
 
 import Footer from "./Footer"
@@ -15,6 +16,7 @@ export function App() {
       <AboutMe />
       <Products />
       <Sites />
+      <Presentations />
     </>
   )
 }
