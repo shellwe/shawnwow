@@ -1,0 +1,95 @@
+[id^=site] {
+    background-color: rgb(240, 240, 240);
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-rows: repeat(4, minmax(0, 1fr));
+        gap: 5%;
+
+        @media only screen and (min-width: 767px) {
+            .specs {
+                grid-column: 1/5;
+                grid-row: 1/4;
+            }
+
+            .iphone-picture {
+                grid-column: 5/6;
+                grid-row: 1/3;
+            }
+
+            .mac-picture {
+                grid-column: 1/3;
+                grid-row: 3/6;
+            }
+
+            .description {
+                grid-column: 3/6;
+                grid-row: 3/6;
+            }
+
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .description{
+            white-space: pre-line
+        }
+        .products {
+            display: inline-flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        figure {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                margin: 0 15px;
+    
+                img {
+                    width: auto;
+                    height: 20px;
+                    max-width: 50px;
+                }
+    
+                figcaption {
+                    Font-Family: 'Roboto Condensed', Sans-Serif;
+                    padding-left: .5rem;
+    
+                }
+            }
+        }
+
+    }
+
+    &:nth-child(even) {
+        .container{
+            @media only screen and (min-width: 767px) {
+                .specs {
+                    grid-column: 2/6;
+                }
+    
+                .iphone-picture {
+                    grid-column: 1/2;
+                }
+    
+                .mac-picture {
+                    grid-column: 3/6;
+                }
+    
+                .description {
+                    grid-column: 1/3;
+                }
+    
+            }
+    
+        }
+        background-color: black;
+        color: white;
+        a {
+            color: aqua;
+        }
+    }
+}
