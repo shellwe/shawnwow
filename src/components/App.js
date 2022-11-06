@@ -6,6 +6,7 @@ import Products from "./Products"
 import Sites from "./Sites"
 import Presentations from "./Presentations"
 import AboutMe from "./AboutMe"
+import ConnectWithMe from "./ConnectWithMe"
 
 import Footer from "./Footer"
 
@@ -14,6 +15,7 @@ export function App() {
     <>
       {/* <Header headerText={'Hello World'} subHeaderText = {'This is the main page Header'} /> */}
       <AboutMe />
+      <ConnectWithMe />
       <Products />
       <Sites />
       <Presentations />

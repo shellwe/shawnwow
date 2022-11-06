@@ -22,12 +22,6 @@ const AboutMe = () => {
       <div className="profile-pic">
         <img src="./images/shawn.jpg" alt="Shawn Hellwege" />
       </div>
-<ul className="connect">
-<li><a href="mailto:shellwe@gmail.com" target="_blank" rel="noreferrer"><img src="./images/logos/gmail-icon.svg" alt="Email Me" /> Email Me</a></li>
-<li><a href="mailto:shellwe@gmail.com" target="_blank" rel="noreferrer"><img src="./images/logos/linkedin-app-icon.svg" alt="LinkedIn" /> LinkedIn</a></li>
-<li><a href="mailto:shellwe@gmail.com" target="_blank" rel="noreferrer"><img src="./images/logos/github-icon.svg" alt="Github" /> Github</a></li>
-<li><a href="mailto:shellwe@gmail.com" target="_blank" rel="noreferrer"><img src="./images/logos/twitter-app-icon.svg" alt="Twitter" /> Twitter</a></li>
-</ul>
 
     </section>
   );
